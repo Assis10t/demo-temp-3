@@ -180,6 +180,109 @@
 \newline
 \end{figure}
 
+\begin{table}[!htb]
+\centering
+\begin{tabular}{| p{2cm} | p{2cm} | p{2cm} | p{2cm} |}
+\hline
+\textbf{Item} & \textbf{Cost Per Unit} & \textbf{Quantity} & \textbf{Total Cost} \\
+\hline
+EV3 Colour Sensor & £30.00 & 2 & £60.00 \\
+\hline
+Omni Wheels & £6.60 & 6 & £39.60 \\
+\hline
+Hardboards & £14.00 & 2 & £28.00 \\
+\hline
+Hypothetical Server Cost & £20.00 & 1 & £20.00 \\ 
+\hline
+ &  & \textbf{Total} & £147.60 \\ 
+\hline
+ &  & \textbf{Balance} & £52.40 \\
+\hline
+\end{tabular}
+\caption{Finance}
+\end{table}
+
+\newpage
+\begin{table}[!htb]
+\centering
+\begin{tabular}{| p{2cm} | p{2cm} |}
+\hline
+\textbf{Battery (mAh)} & \textbf{Voltage} \\
+\hline
+2200 & 7.5V \\
+\hline
+\end{tabular}
+\caption{EV3 Battery and Voltage}
+\end{table}
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{| p{2cm} | p{2cm} | p{2cm} | p{2cm} | p{2cm} |}
+\hline
+\textbf{Component} & \textbf{Amperes (7.5V)} & \textbf{Number on Boards} & \textbf{Total Amperes} & \textbf{Total mA}\\
+\hline
+Colour Sensor & 0.107 & 4 & 0.428 & 428 \\
+\hline
+Motor (100\% running free) & 0.186 & 5 & 0.930 & 930 \\
+\hline 
+Processor (Full load) & 0.098 & 1 & 0.098 & 98 \\
+\hline
+ & & & \textbf{Battery Time From Full Charge (Hours)} & 1.511 \\ 
+ \hline
+\end{tabular}
+\caption{Source https://www.dexterindustries.com/ev3-current-consumption-measurement/}
+\end{table}
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{| p{2cm} | p{2cm} | p{2cm} | p{2cm} | p{2cm} |}
+\hline
+\textbf{Component} & \textbf{Amperes (7.5V)} & \textbf{Number on Board} & \textbf{Total Amperes} & \textbf{Total mA}\\
+\hline
+Colour Sensor & 0.107 & 4 & 0.428 & 428 \\
+\hline
+Motor (100\% locked) & 0.911 & 5 & 4.555 & 4555 \\
+\hline 
+Processor (Full load) & 0.098 & 1 & 0.098 & 98 \\
+\hline
+ & & & \textbf{Battery Time From Full Charge (Hours)} & 0.433 \\ 
+ \hline
+\end{tabular}
+\caption{Source https://www.dexterindustries.com/ev3-current-consumption-measurement/; locked implies lot of friction on motor}
+\end{table}
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{| p{2cm} | p{2cm} | p{2cm} | p{2cm} | p{2cm} |}
+\hline
+\textbf{Component} & \textbf{Amperes (7.5V)} & \textbf{Number on Board} & \textbf{Total Amperes} & \textbf{Total mA}\\
+\hline
+Phigit & 0.5 & 1 & 0.5 & 500 \\
+\hline
+Servo & 0.18 & 1 & 0.18 & 180 \\
+\hline 
+Raspberry Pi & 1.2 & 1 & 1.2 & 1200 \\
+\hline
+ & & & \textbf{Battery Time From Full Charge (Hours)} & 2.872 \\ 
+ \hline
+\end{tabular}
+\caption{Source: Data provided by manufacturers}
+\end{table}
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{| p{2cm} | p{2cm} | p{2cm} | p{2cm} | p{2cm} |}
+\hline
+\textbf{Component} & \textbf{Amperes (7.5V)} & \textbf{Number on Board} & \textbf{Total Amperes} & \textbf{Total mA}\\
+\hline
+Small Motor & 0.202 & 1 & 0.202 & 202 \\
+\hline
+ & & & \textbf{Battery Time From Full Charge (Hours)} & 102.970\\ 
+ \hline
+\end{tabular}
+\caption{Source: Data provided by manufacturers}
+\end{table}
+
 \end{center}
   
 \end{document}
